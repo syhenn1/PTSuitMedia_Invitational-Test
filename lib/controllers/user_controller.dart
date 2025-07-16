@@ -21,7 +21,7 @@ class UserController extends GetxController {
 
     isLoading.value = true;
     final response = await GetConnect().get(
-      'https://reqres.in/api/users?page=1&per_page=10',
+      'https://reqres.in/api/users?page=1&per_page=8',
       headers: {'x-api-key': 'reqres-free-v1'},
     );
     if (response.statusCode == 200) {
